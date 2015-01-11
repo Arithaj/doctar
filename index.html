@@ -1,0 +1,48 @@
+<html>
+	<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/bigvideo.css">
+    <script src="static/js/modernizr-2.5.3.min.js"></script>
+    <!-- BigVideo Dependencies -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="static/js/jquery-ui-1.8.22.custom.min.js"></script>
+    <script src="http://vjs.zencdn.net/c/video.js"></script>
+    <!-- BigVideo -->
+    <script src="static/js/bigvideo.js"></script>
+		<script>
+			var BV,
+				isTouch = Modernizr.touch,
+				$window = $(window);
+
+			$(document).ready(function(){   		
+				if (!isTouch) {
+					// initialize BigVideo
+					BV = new $.BigVideo({forceAutoplay:isTouch});
+					BV.init();
+					showVideo();
+	                
+					BV.getPlayer().addEvent('loadeddata', function() {
+						onVideoLoaded();
+					});
+	        $window.on('resize');
+				}
+	  
+				function showVideo() {
+					BV.show($('.wrapper .screen:nth-child(1)').attr('data-video'),{ambient:true});
+					$('.wrapper .screen .big-image').css({opacity:1});
+				}	
+
+				function onVideoLoaded() {
+					$('.wrapper .screen:nth-child(1)').find('.big-image').animate({opacity:0},500);
+				}
+      });
+		</script>
+	</head>
+	
+	<body>
+	    <div class="wrapper">
+        <div class="screen" id="screen-1" data-video="video/video.webm"></div>
+	    </div>
+	</body>
+</html>
