@@ -109,17 +109,18 @@ body {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
     height: 170px;
 }
 
-.home .video .search-box .topic {font-size: 30px; text-align: center;}
+.search-box .topic {font-size: 30px; text-align: center;}
 
-.home .video .search-box button {width: 16%;}
-.home .video .search-box select {width: 40%;}
-.home .video .search-box p {margin:15px 0; font-size: 18px;}
-.home .video .search-box input[type="text"] {
+.search-box button {width: 16%;}
+.search-box select {width: 40%;}
+.search-box p {margin:15px 0; font-size: 18px;}
+.search .search-box p {font-size: 16px;}
+.search-box input[type="text"] {
     width: 40%; 
     margin: 0 1%;
     font-size: 18px;
 }
-.home .video .search-box input[type="radio"] {margin: 0 1% 0 3%;}
+.search-box input[type="radio"] {margin: 0 1% 0 3%;}
 
 .home .doctor {padding: 2.5% 0;}
 .home .doctor .choice {
@@ -232,9 +233,38 @@ body {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
 
 /* ---------- search page ------------*/
 
-.search .map {background-color: red; height: 500px;}
-.search .col-md-8 {background-color: #fafafa; height: 500px;}
+.search.container {width: 1170px;}
+.search .map {background-color: #F5ECCE; height: 500px;}
+.search .col-md-8 {padding: 0px;}
 .search.container {padding: 0;}
+
+.search .search-box select {width: 35%;}
+.search .search-box input[type="text"] {width: 45%;}
+.search .search-box {
+    text-align: left; 
+    background-color: #fafafa;
+    padding:4% 2% 2% 2%;
+    border:1px solid #d8d8d8;
+}
+
+.search .table .image {text-align: center;}
+.search .table .infomation {padding-right: 2%;}
+.search .table .day {background-color: #fafafa;}
+.search .table img {width: 80%;}
+
+.search .table tr {border:1px solid #d8d8d8; background-color: white;}
+.search .table td {padding: 2% 0;}
+.search .table td p{
+    margin:0px; 
+    line-height: 180%; 
+    font-size: 15px;
+    color:#6E6E6E;
+}
+.search .table button {margin-top:10%;}
+
+.search .table .address {font-size: 14px; color:#848484;}
+.search .table .topic {color:#00aaaa; text-decoration: underline; font-size: 16px;}
+.search .table .name {color:#00aaaa;}
 
 
 
