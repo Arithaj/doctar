@@ -266,8 +266,97 @@ body {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
 .search .table .topic {color:#00aaaa; text-decoration: underline; font-size: 16px;}
 .search .table .name {color:#00aaaa;}
 
+/* ---------- appoint ------------*/
 
+.appoint {padding-top: 4%;}
+.appoint.container {width: 1170px;}
 
+.appoint .appointment {width: 64%; float: left;}
+.appoint .process {
+    width: 100%;
+    height: 80px;
+}
+.appoint .appointment .content {
+    width: 90%;
+    margin:auto;
+    text-align: left;
+    font-size: 18px;
+    margin-bottom: 5%;
+    color:#585858;
+}
+.appoint .appointment .row {padding: 5%;}
+.appoint .appointment select {width: 25%;}
+.appoint .appointment input[type="radio"] {margin:0 1% 0 1%;}
+.appoint .appointment .select {width: 50%; font-size: 16px;}
+
+.appoint .appointment .col-md-6 {padding: 0 0 0 5.5%;}
+.appoint .appointment .lastname {padding: 0px;}
+
+.appoint .doctor {
+    text-align: left;
+    padding: 1%;
+    border:3px solid #E6E6E6;
+    font-size: 15px;
+    width: 34%;
+    float: right;
+    color: #6E6E6E;
+    margin-bottom: 5%;
+}
+.appoint .doctor .col-md-5 {padding-right: 0px;}
+.appoint .doctor img {width: 100%;}
+.appoint .doctor .header {
+    background-color:#E6E6E6; 
+    height: 42px;
+    font-size: 18px;
+    margin-bottom: 4%;
+    padding-top: 2.5%;
+    color: #2E2E2E;
+}
+
+.appoint .doctor .head {font-weight: 600; font-size: 17px; color:#2E2E2E;}
+.appoint .doctor .topic {
+    font-weight: 600; 
+    font-size: 16px;
+    margin: 15px 0 5px 0;
+    color:#2E2E2E;
+}
+.appoint .doctor .address {font-style:italic;}
+
+.parallelogram-1 {
+    height: 28px;
+    background-color: #00aaaa;
+    -webkit-transform: skew(40deg); 
+    -moz-transform: skew(40deg); 
+    -o-transform: skew(40deg);
+    transform: skew(40deg);
+}
+
+.parallelogram-2 {
+    height: 25px;
+    background-color: #00aaaa;
+    -webkit-transform: skew(320deg); 
+    -moz-transform: skew(320deg); 
+    -o-transform: skew(320deg);
+    transform: skew(320deg);
+}
+.step {float: left; color:white;}
+
+.step-1, .step-2, .step-3, .step-4 {position: relative; margin:0 1%;}
+
+.step-1 p, .step-2 p, .step-3 p,
+.step-4 p {position: absolute; top:25%; left:20%; font-size: 16px;}
+.step-3 p {left:28%;}
+
+.step-1 {width: 30%;}
+.step-2 {width: 22%;}
+.step-3 {width: 15%;}
+.step-4 {width: 20%;}
+
+.step-3 .parallelogram-2, .step-3 .parallelogram-1,
+.step-4 .parallelogram-2, .step-4 .parallelogram-1 {background-color: #f2f2f2;}
+
+.step-3 p, .step-3 p,
+.step-4 p, .step-4 p {color: #585858;}
 
 
 
