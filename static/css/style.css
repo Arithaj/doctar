@@ -262,6 +262,7 @@ body {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
 }
 .search .table button {margin-top:10%;}
 
+
 .search .table .address {font-size: 14px; color:#848484;}
 .search .table .topic {color:#00aaaa; text-decoration: underline; font-size: 16px;}
 .search .table .name {color:#00aaaa;}
@@ -290,11 +291,13 @@ body {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
 
 .appoint .appointment .col-md-6 {padding: 0 0 0 5.5%;}
 .appoint .appointment .lastname {padding: 0px;}
+
 .appoint .appointment .more {
     font-size: 15px; 
     color:#848484; 
     margin-bottom: 6%;
 }
+.patient .tab-content .topic,
 .appoint .appointment .topic {color:#424242;}
 
 .appoint .login-box {
@@ -312,6 +315,7 @@ body {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
 .appoint .login-box p {padding-top: 10px; text-align: left;}
 .appoint .login-box input {width: 80%;}
 .appoint .login-box .forgot {color:#00aaaa; margin-top: 2%;}
+
 
 .appoint .login-box .foot,
 .appoint .login-box .head {
@@ -350,6 +354,47 @@ body {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
     color:#2E2E2E;
 }
 .appoint .doctor .address {font-style:italic;}
+
+
+/* ---------- patient ------------*/
+.patient {padding: 4% 0;}
+.patient .patient-list {
+    border:2px solid #E6E6E6;
+    height: auto;
+    width: 100%;
+    font-size: 15px;
+    color: #6E6E6E;
+    padding: 1% 2%;
+}
+
+.patient .nav-pills li {width: 49.9%; font-size: 18px;}
+.patient .col-md-8 {text-align: left;}
+.patient button {width: 100px; margin: 10% 0 0 0;}
+
+
+.patient .tab-content .head {color:#00aaaa; font-size: 18px;}
+.patient .tab-content .topic {color: #585858; font-weight: 600;}
+.patient .tab-content .address {font-style: italic;}
+.patient .tab-content span {color:#6E6E6E; font-weight: 400;}
+
+.patient .tab-content .patient-box {
+    padding: 2% 0;
+    border-bottom:2px solid #f2f2f2;
+}
+.patient .tab-content .patient-box.last {border-bottom:0px;}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, 
+.nav-pills > li.active > a:focus {
+    background-color: #00aaaa; 
+    color:white;
+}
+.nav-pills > li a {background-color: #f2f2f2; color:#585858;}
+
+
+/* ---------- doctor-profile ------------*/
+
+.doctor-profile .overview {width: 65%; float: left;}
+.doctor-profile .map {width:  35%; float: left;}
 
 
 .parallelogram-1 {
