@@ -16,7 +16,7 @@
     padding: 0px;
     margin: 0px;
 }
-body {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; color:#2E2E2E; min-width: 400px;}
+body {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; color:#2E2E2E; min-width: 320px;}
 li {list-style-type: none;}
 
 .header {
@@ -99,13 +99,12 @@ li {list-style-type: none;}
 
 #register .modal-content,
 #login .modal-content {
+    width: 80%;
     text-align:center; 
     padding:0px;
     font-size: 17px;
 }
 #register .modal-content{width: 100%;}
-
-#login .modal-dialog {width: 450px;}
 
 .modal-content .modal-footer {
     text-align: left; 
