@@ -37,13 +37,13 @@
     <div class="body join">
       <div class="intro container">
         <h1> หากคุณเป็นหมอหรือหมอฟัน </h1>
-        <p> Doctar จะช่วยให้ผู้ป่วยค้นหา และนัดพบออนไลน์กับท่านได้อย่างสะดวก </p>
-        <p> รวมทั้งช่วยเพิ่มประสิทธิภาพในการประกอบการของท่านให้ดียิ่งขึ้น </p>
+        <p> Doctar จะช่วยให้ผู้ป่วยค้นหา <span>และนัดพบออนไลน์กับท่านได้อย่างสะดวก</span> </p>
+        <p> รวมทั้งช่วยเพิ่มประสิทธิภาพ <span>ในการประกอบการของท่านให้ดียิ่งขึ้น </span></p>
         <div class="about">
           <img src="static/image/test.png" >
           <a href="#firstPage">
          
-            <button ="btn btn-default"> เข้าร่วม Doctar </button>
+            <button class="btn btn-default"> เข้าร่วม Doctar </button>
           </a>
         </div>
       </div>
@@ -51,18 +51,20 @@
       <div class="content">
         <div class="container">
            <div class="row">
+            <div class="infomation left">
+              <img src="static/image/doctor.png">
+            </div>
+
             <div class="infomation">
               <p class="topic">ได้รับผู้ป่วยเพิ่มมากขึ้น</p>
               <p> ช่วยให้ท่านนำเสนอตัวตน ให้เป็นที่รู้จักมากขึ้นทั้งในละนอกประเทศ
                   ที่เข้ามาค้นหาได้ตรงเป้าหมายเช่นท่าน โดยไม่จำเป็นต้องสร้างเว็บไซต์ส่วนตัว </p>
             </div>
-            <div class="infomation">
-              <img src="static/image/doctor.png">
-            </div>
+            
           </div>
 
           <div class="row">
-            <div class="infomation">
+            <div class="infomation right">
               <img src="static/image/doctor.png">
             </div>
             <div class="infomation">
@@ -73,18 +75,18 @@
           </div>
 
           <div class="row">
+            <div class="infomation left">
+              <img src="static/image/doctor.png">
+            </div>
             <div class="infomation">
               <p class="topic">แจ้งเตือนเวลานัดพบให้กับผู้ป่วย</p>
               <p> ช่วยให้ท่านนำเสนอตัวตน ให้เป็นที่รู้จักมากขึ้นทั้งในละนอกประเทศ
                   ที่เข้ามาค้นหาได้ตรงเป้าหมายเช่นท่าน โดยไม่จำเป็นต้องสร้างเว็บไซต์ส่วนตัว </p>
             </div>
-            <div class="infomation">
-              <img src="static/image/doctor.png">
-            </div>
           </div>
 
           <div class="row">
-            <div class="infomation">
+            <div class="infomation right">
               <img src="static/image/doctor.png">
             </div>
             <div class="infomation">
@@ -105,24 +107,39 @@
             <div class="partner-left">
               <div class="row">
                 <div class="subpartner-left">
-                  <p>คำนำหน้าชื่อ </p> 
+                  <p>คำนำหน้า</p> 
                   <select class="form-control"> <option value="">นพ.</option> </select>
                 </div>
                 <div class="subpartner-right">
                   <p>ชื่อ </p> <input type="text" class="form-control" placeholder="ชื่อ">
                 </div>
-              </div>
-             
-              <p>อีเมล์ </p> <input type="text" class="form-control" placeholder="อีเมลแอดเดรส">
-              <p>คลีนิค หรือศูนย์การแพทย์ </p> <input type="text" class="form-control" placeholder="คลีนิค หรือศูนย์การแพทย์">
-              <p>ความเชี่ยวชาญ </p> 
-              <select class="form-control"> <option value="">เลือกความเชี่ยวชาญ</option> </select>
+              </div> 
             </div>
 
             <div class="partner-right">
               <p>นามสกุล </p> <input type="text" class="form-control" placeholder="นามสกุล">
-              <p>เบอร์โทรติดต่อ </p> <input type="text" class="form-control" placeholder="เบอร์โทรติดต่อ">
-              <p>สาขา (ถ้ามี) </p> <input type="text" class="form-control" placeholder="สาขา (ถ้ามี)">
+            </div>
+
+            <div class="partner-left">
+              <div class="row">
+                <p>อีเมล์ </p> <input type="text" class="form-control" placeholder="อีเมลแอดเดรส">
+              </div>
+              <div class="row">
+                <p>คลีนิค หรือศูนย์การแพทย์ </p> <input type="text" class="form-control" placeholder="คลีนิค หรือศูนย์การแพทย์">
+              </div>
+              <div class="row">
+                <p>ความเชี่ยวชาญ </p> 
+                <select class="form-control"> <option value="">เลือกความเชี่ยวชาญ</option> </select>
+              </div>
+            </div>
+
+            <div class="partner-right">
+              <div class="row">
+                <p>เบอร์โทรติดต่อ </p> <input type="text" class="form-control" placeholder="เบอร์โทรติดต่อ">
+              </div>
+              <div class="row">
+                <p>สาขา (ถ้ามี) </p> <input type="text" class="form-control" placeholder="สาขา (ถ้ามี)">
+              </div>
             </div>
           </div>
 
