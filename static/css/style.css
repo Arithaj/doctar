@@ -16,7 +16,7 @@
     padding: 0px;
     margin: 0px;
 }
-body {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; color:#2E2E2E; min-width: 320px;}
+body {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; color:#2E2E2E;}
 li {list-style-type: none;}
 
 .header {
@@ -636,6 +636,8 @@ li {list-style-type: none;}
 .doctor-profile .tab-content #review .row {padding: 1% 0 4% 0; border-bottom: 2px solid #e6e6e6;}
 .doctor-profile .tab-content #review .row.last {border-bottom: none;}
 
+
+.doctor-profile .nav-pills > li a {font-size: 18px;}
 /* ---------- setting  ------------*/
 
 .setting {padding: 4% 0; font-size: 17px;}
