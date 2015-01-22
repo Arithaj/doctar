@@ -10,17 +10,27 @@
 
   <body>
     <div class="header">
-      <img src="static/image/logo.png">
+      <a href="home.html"><img src="static/image/logo.png"></a>
       <div class="login">
-        <p><a href="#" data-toggle="modal" data-target="#register">สมัครสมาชิก </a></p>
-        <p><a href="#" data-toggle="modal" data-target="#login">เข้าสู่ระบบ </a></p>
-     
         <li class="dropdown">
-          <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-              <span class="username">Browse ^</span>
-          </a>
+          <button data-toggle="dropdown" class="dropdown-toggle" type="button">
+              <span class="username"><span class="glyphicon glyphicon-user"></span> สมชาย </span>
+          </button>
           <ul class="dropdown-menu extended logout">
-              <li><a href="home.html">หน้าแรก</a></li>
+              <li><a href="patient_page.html">
+                <span class="glyphicon glyphicon-calendar"></span> My Appointment</a></li>
+              <li><a href="setting.html">
+                <span class="glyphicon glyphicon-cog"></span> Setting</a></li>
+              <li><a href="home.html">
+                <span class="glyphicon glyphicon-user"></span> Logout</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <button data-toggle="dropdown" class="dropdown-toggle" type="button">
+              <span class="username">Browse <span class="glyphicon glyphicon-chevron-down"></span></span>
+          </button>
+          <ul class="dropdown-menu extended logout">
+              <li role="presentation"><a href="home.html" >หน้าแรก</a></li>
               <li><a href="why_join.html">เข้าร่วม Doctar</a></li>
               <li><a href="search_page.html">ค้นหาและนัดพบหมอ</a></li>
           </ul>
@@ -53,6 +63,7 @@
             <p> วีอาร์ อินเตอร์เนชั่นเเนล เมคโอเว่อร์คลินิค (สาขา สุขุมวิท)</p>
           </div>
         </div>
+
         <div class="map">
           <img src="static/image/map.png" width="100%">
         </div>
@@ -120,7 +131,116 @@
             </div>
 
             <div role="tabpanel" class="tab-pane active" id="review">
-
+              <p>
+                <div class="rating">
+                  <span class="head"> Average Rating </span> 
+                  <span>☆</span><span>☆</span><span class="active">☆</span><span class="active">☆</span><span class="active">☆</span>
+                </div> 
+                   
+              </p>
+              <p>
+                <div class="rating">
+                  <span class="head"> Bedside Manner </span> 
+                  <span>☆</span><span>☆</span><span class="active">☆</span><span class="active">☆</span><span class="active">☆</span>
+                </div>    
+              </p>
+              <p>
+                <div class="rating">
+                  <span class="head"> Wait Time </span> 
+                  <span>☆</span><span>☆</span><span class="active">☆</span><span class="active">☆</span><span class="active">☆</span>
+                </div>     
+              </p>
+              
+              <div class="row">
+                <div class="col-md-12 topic">Jan 9, 2558 by Julian G.</div>
+                <div class="type-rating">
+                  <p>
+                    <div class="rating">
+                      <span>☆</span><span>☆</span><span class="active">☆</span><span class="active">☆</span><span class="active">☆</span>
+                    </div>     
+                  </p>
+                  <p> Overall Rating </p>
+                </div>
+                <div class="type-rating">
+                  <p>
+                    <div class="rating">
+                      <span>☆</span><span>☆</span><span class="active">☆</span><span class="active">☆</span><span class="active">☆</span>
+                    </div>     
+                  </p>
+                  <p> Overall Rating </p>
+                </div>
+                <div class="type-rating">
+                  <p>
+                    <div class="rating">
+                      <span>☆</span><span>☆</span><span class="active">☆</span><span class="active">☆</span><span class="active">☆</span>
+                    </div>     
+                  </p>
+                  <p> Overall Rating </p>
+                </div>
+                <div class="col-md-12">
+                  Dr. Ahn id the best doctor I've ever seen. He genuinely wanted to get to the bottom of any and all potentail issues, without showing an ounce of jugement. Very personable and knowledgeable.
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 topic">Jan 9, 2558 by Julian G.</div>
+                <div class="type-rating">
+                  <p>
+                    <div class="rating">
+                      <span>☆</span><span>☆</span><span class="active">☆</span><span class="active">☆</span><span class="active">☆</span>
+                    </div>     
+                  </p>
+                  <p> Overall Rating </p>
+                </div>
+                <div class="type-rating">
+                  <p>
+                    <div class="rating">
+                      <span>☆</span><span>☆</span><span class="active">☆</span><span class="active">☆</span><span class="active">☆</span>
+                    </div>     
+                  </p>
+                  <p> Overall Rating </p>
+                </div>
+                <div class="type-rating">
+                  <p>
+                    <div class="rating">
+                      <span>☆</span><span>☆</span><span class="active">☆</span><span class="active">☆</span><span class="active">☆</span>
+                    </div>     
+                  </p>
+                  <p> Overall Rating </p>
+                </div>
+                <div class="col-md-12">
+                  Dr. Ahn id the best doctor I've ever seen. He genuinely wanted to get to the bottom of any and all potentail issues, without showing an ounce of jugement. Very personable and knowledgeable.
+                </div>
+              </div>
+              <div class="row last">
+                <div class="col-md-12 topic">Jan 9, 2558 by Julian G.</div>
+                <div class="type-rating">
+                  <p>
+                    <div class="rating">
+                      <span>☆</span><span>☆</span><span class="active">☆</span><span class="active">☆</span><span class="active">☆</span>
+                    </div>     
+                  </p>
+                  <p> Overall Rating </p>
+                </div>
+                <div class="type-rating">
+                  <p>
+                    <div class="rating">
+                      <span>☆</span><span>☆</span><span class="active">☆</span><span class="active">☆</span><span class="active">☆</span>
+                    </div>     
+                  </p>
+                  <p> Overall Rating </p>
+                </div>
+                <div class="type-rating">
+                  <p>
+                    <div class="rating">
+                      <span>☆</span><span>☆</span><span class="active">☆</span><span class="active">☆</span><span class="active">☆</span>
+                    </div>     
+                  </p>
+                  <p> Overall Rating </p>
+                </div>
+                <div class="col-md-12">
+                  Dr. Ahn id the best doctor I've ever seen. He genuinely wanted to get to the bottom of any and all potentail issues, without showing an ounce of jugement. Very personable and knowledgeable.
+                </div>
+              </div>
             </div>
           </div>
         </div>

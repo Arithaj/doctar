@@ -11,22 +11,25 @@
 
   <body>
     <div class="header">
-      <img src="static/image/logo.png">
+      <a href="home.html"><img src="static/image/logo.png"></a>
       <div class="login">
         <li class="dropdown">
-          <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-              <span class="username">สมชาย</span>
-          </a>
+          <button data-toggle="dropdown" class="dropdown-toggle" type="button">
+              <span class="username"><span class="glyphicon glyphicon-user"></span> สมชาย </span>
+          </button>
           <ul class="dropdown-menu extended logout">
-              <li><a href="patient_page.html">My Appointment</a></li>
-              <li><a href="setting.html">Setting</a></li>
-              <li><a href="home.html">Logout</a></li>
+              <li><a href="patient_page.html">
+                <span class="glyphicon glyphicon-calendar"></span> My Appointment</a></li>
+              <li><a href="setting.html">
+                <span class="glyphicon glyphicon-cog"></span> Setting</a></li>
+              <li><a href="home.html">
+                <span class="glyphicon glyphicon-user"></span> Logout</a></li>
           </ul>
         </li>
         <li class="dropdown">
-          <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-              <span class="username">Browse ^</span>
-          </a>
+          <button data-toggle="dropdown" class="dropdown-toggle" type="button">
+              <span class="username">Browse <span class="glyphicon glyphicon-chevron-down"></span></span>
+          </button>
           <ul class="dropdown-menu extended logout">
               <li role="presentation"><a href="home.html" >หน้าแรก</a></li>
               <li><a href="why_join.html">เข้าร่วม Doctar</a></li>
@@ -47,19 +50,25 @@
         <div class="row">   
           <div class="topic"> Personal Infomation</div>
           <div class="content">
-            <div class="col-md-6">
-              <p> ชื่อจริง </p>
-              <input type="text" class="form-control">
-              <p> อีเมล์ </p>
-              <input type="text" class="form-control">
-            </div>
-            <div class="col-md-6">
-              <p> นามสกุล </p>
-              <input type="text" class="form-control">
-              <p> เบอร์โทรศัพท์ </p>
-              <input type="text" class="form-control">
-            </div>
+            <div class="col-md-12">
+              <div class="setting-left">
+                <p> ชื่อจริง </p>
+                <input type="text" class="form-control">
+              </div>
+              <div class="setting-right">
+                <p> นามสกุล </p>
+                <input type="text" class="form-control">
+              </div>
 
+              <div class="setting-left">
+                <p> อีเมล์ </p>
+                <input type="text" class="form-control">
+              </div>
+              <div class="setting-right">
+                <p> เบอร์โทรศัพท์ </p>
+                <input type="text" class="form-control">
+              </div>
+            </div>
             <div class="col-md-12">
               <p> เพศ </p>        
               <select class="form-control">
@@ -67,7 +76,7 @@
               </select> 
               
               <p> วันเกิด </p>
-              <div class="form-inline">
+              <div class="form-inline date">
                 <select class="form-control">
                   <option> 1</option>
                   <option> 2</option>

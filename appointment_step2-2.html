@@ -3,28 +3,32 @@
   <meta charset="utf-8"> 
   <link rel="stylesheet" href="static/css/bootstrap.css">
   <link rel="stylesheet" href="static/css/style.css">
+  <link rel="stylesheet" href="static/css/responsive.css">
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script type="text/javascript" src="static/js/bootstrap.js"></script>
   </head>
 
   <body>
     <div class="header">
-      <img src="static/image/logo.png">
+      <a href="home.html"><img src="static/image/logo.png"></a>
       <div class="login">
         <li class="dropdown">
-          <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-              <span class="username">สมชาย</span>
-          </a>
+          <button data-toggle="dropdown" class="dropdown-toggle" type="button">
+              <span class="username"><span class="glyphicon glyphicon-user"></span> สมชาย </span>
+          </button>
           <ul class="dropdown-menu extended logout">
-              <li><a href="patient_page.html">My Appointment</a></li>
-              <li><a href="setting.html">Setting</a></li>
-              <li><a href="home.html">Logout</a></li>
+              <li><a href="patient_page.html">
+                <span class="glyphicon glyphicon-calendar"></span> My Appointment</a></li>
+              <li><a href="setting.html">
+                <span class="glyphicon glyphicon-cog"></span> Setting</a></li>
+              <li><a href="home.html">
+                <span class="glyphicon glyphicon-user"></span> Logout</a></li>
           </ul>
         </li>
         <li class="dropdown">
-          <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-              <span class="username">Browse ^</span>
-          </a>
+          <button data-toggle="dropdown" class="dropdown-toggle" type="button">
+              <span class="username">Browse <span class="glyphicon glyphicon-chevron-down"></span></span>
+          </button>
           <ul class="dropdown-menu extended logout">
               <li role="presentation"><a href="home.html" >หน้าแรก</a></li>
               <li><a href="why_join.html">เข้าร่วม Doctar</a></li>
@@ -78,7 +82,7 @@
         </div>
       </div>
 
-      <div class="doctor">
+      <div class="doctor row">
         
           <div class="header">การนัดพบแพทย์ของคุณ</div>
           <div class="col-md-5">
@@ -95,10 +99,12 @@
             <p class="type"> แพทย์เวชศาสตร์ความงาม แพทย์โรคผิวหนัง</p>
             
           </div>
-          <p> วีอาร์โคเรีย เอสเทสิค คลีนิค (สาขาเมืองเอก รังสิต) </p>
-          <p class="address"> 300/158-9 หมู่ที่ 13 ซ.พหลโยธิน 87 ถ.พหลโยธิน ต.คูคด อ.ลำลูกกา จ.ประทุมธานี 12130</p>
-          <p class="topic">วันและเวลานัดพบ</p>
-          <p>Sun 07 Sep 2014  08:40 PM</p>
+          <div class="col-md-12">
+            <p> วีอาร์โคเรีย เอสเทสิค คลีนิค (สาขาเมืองเอก รังสิต) </p>
+            <p class="address"> 300/158-9 หมู่ที่ 13 ซ.พหลโยธิน 87 ถ.พหลโยธิน ต.คูคด อ.ลำลูกกา จ.ประทุมธานี 12130</p>
+            <p class="topic">วันและเวลานัดพบ</p>
+            <p>Sun 07 Sep 2014  08:40 PM</p>
+          </div>
        
       </div>
     </div>

@@ -16,7 +16,7 @@
     padding: 0px;
     margin: 0px;
 }
-body {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; color:#2E2E2E; min-width: 320px;}
+body {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; color:#2E2E2E; min-width: 400px;}
 li {list-style-type: none;}
 
 .header {
@@ -25,7 +25,7 @@ li {list-style-type: none;}
     background-color: #00aaaa;
     padding: 5px 4%;
 }
-.header img {width:9%; float: left;}
+.header img {width: 120px; float: left;}
 
 .header .login > li,
 .header .login p{
@@ -37,6 +37,8 @@ li {list-style-type: none;}
     text-align: center;
 }
 .header .login .dropdown-menu li {text-align: left;}
+.header .login .dropdown-menu {top:120%; left:-100%;}
+.header .login .dropdown-menu span {padding: 0 2%;}
 
 .header a {color: white; font-size: 17px;}
 
@@ -54,6 +56,11 @@ li {list-style-type: none;}
 .sub-header a:hover {color: #00aaaa; text-decoration: none;}
 .sub-header p {font-size: 20px;}
 .sub-header span {padding:0 1%;}
+
+
+.header .glyphicon-chevron-down:before {font-size: 14px;}
+
+.dropdown button {background-color: transparent; border:none; }
 
 .container {width: 1024px; padding:0 4%; text-align: center;}
 .footer {
@@ -92,12 +99,13 @@ li {list-style-type: none;}
 
 #register .modal-content,
 #login .modal-content {
-    width: 80%; 
     text-align:center; 
     padding:0px;
     font-size: 17px;
 }
 #register .modal-content{width: 100%;}
+
+#login .modal-dialog {width: 450px;}
 
 .modal-content .modal-footer {
     text-align: left; 
@@ -184,7 +192,7 @@ li {list-style-type: none;}
     background-color: rgba(0,0,0,.5);
 }
 
-.home .header img {width: 13%; float: left;}
+
 .home .header p {
     float: right; 
     /*width: 8%;*/ 
@@ -202,8 +210,8 @@ li {list-style-type: none;}
     left: 25%;
     bottom: 25%;
     padding: 5px 2% 8px 2%;
-    /*-webkit-transition: width 1s; 
-    transition: width 1s;*/
+    -webkit-transition: width 1s; 
+    transition: width 1s;
 }
 .home .video .bg-search {
     background-color: #1C1C1C; 
@@ -253,7 +261,7 @@ li {list-style-type: none;}
  
 .home .more-info{
     width: 100%;
-    height: 45%;
+    height: 340px;
     position: relative;
     color:white;
 }
@@ -536,9 +544,14 @@ li {list-style-type: none;}
 
 /* ---------- doctor-profile ------------*/
 
-.doctor-profile .profile-overview {margin-bottom: 4%; padding: 3%; background-color: #f2f2f2;}
+.doctor-profile .profile-overview {margin-bottom: 4%; }
 
-.doctor-profile .overview {text-align: left; font-size: 17px;}
+.doctor-profile .overview {
+    text-align: left; 
+    font-size: 17px;  
+    padding: 2% 0; 
+    background-color: #f2f2f2;
+}
 .doctor-profile .overview p {color: #00aaaa;}
 .doctor-profile .overview img {border:1px solid #A4A4A4;}
 
@@ -548,13 +561,16 @@ li {list-style-type: none;}
 .doctor-profile .content ,
 .doctor-profile .overview {width: 58%; float: left; margin-bottom: 4%;}
 
-.doctor-profile .overview {width: 64%;}
+.doctor-profile .overview {width: 59%;}
 .doctor-profile .address {font-size: 15px; color:#6E6E6E; font-style: italic;}
 
 .doctor-profile .booking,
-.doctor-profile .map {width:  40%; float: right;}
+.doctor-profile .map {width:  40%; float: right; 
+    -webkit-transition: width 0.2s; 
+    transition: width 0.2s;
+}
 
-.doctor-profile .map {width: 35%;}
+/*.doctor-profile .map {width: 40%;*/}
 
 .doctor-profile ul {font-size: 18px;}
 
@@ -608,7 +624,18 @@ li {list-style-type: none;}
     margin-top: 3%;
     font-weight: 500;
 }
-
+.doctor-profile .tab-content span.head {
+    width: 200px; 
+    font-size: 18px; 
+    color: #2E2E2E;
+    margin-left: 2%;
+    font-weight: 500;
+}
+.doctor-profile .tab-content .type-rating p,
+.doctor-profile .tab-content .rating {padding-left: 15px;}
+.doctor-profile .tab-content .type-rating {width: 33%; float: left; }
+.doctor-profile .tab-content #review .row {padding: 1% 0 4% 0; border-bottom: 2px solid #e6e6e6;}
+.doctor-profile .tab-content #review .row.last {border-bottom: none;}
 
 /* ---------- setting  ------------*/
 
@@ -626,6 +653,10 @@ li {list-style-type: none;}
 .setting .body-setting .row select {width: 30%;}
 .setting .body-setting .row button {margin: 5%; padding: 1.5% 4%; font-size: 16px;}
 
+.setting .setting-right,
+.setting .setting-left {width: 49%; float: right;}
+
+.setting .setting-left {float: left;}
 .setting .topic {
     font-size: 20px; 
     color:#00aaaa; 
