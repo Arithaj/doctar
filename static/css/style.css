@@ -8,12 +8,16 @@
     font-style: normal;
 }
 
+/* ---------- topic #2E2E2E ------------*/
+/* ---------- p #E6E6E6 ------------*/
+
 
 * {
     padding: 0px;
     margin: 0px;
 }
-body {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
+body {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; color:#2E2E2E;}
+li {list-style-type: none;}
 
 .header {
     width: 100%; 
@@ -23,14 +27,33 @@ body {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
 }
 .header img {width:9%; float: left;}
 
+.header .login > li,
 .header .login p{
     float: right; 
-    width: 9%; 
+    width: 100px; 
     font-size: 16px; 
     color: white; 
     margin-top:10px;
     text-align: center;
 }
+.header .login .dropdown-menu li {text-align: left;}
+
+.header a {color: white; font-size: 17px;}
+
+.sub-header {
+    width: 100%; 
+    background-color: #fafafa;
+    padding: 1% 0 0.5% 0;
+}
+.sub.container {
+    text-align: left;
+    color:#2e2e2e;
+    padding: 0px;
+}
+.sub-header a {color:#2e2e2e;}
+.sub-header a:hover {color: #00aaaa; text-decoration: none;}
+.sub-header p {font-size: 20px;}
+.sub-header span {padding:0 1%;}
 
 .container {width: 1024px; padding:0 4%; text-align: center;}
 .footer {
@@ -61,6 +84,83 @@ body {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
 
 .row {margin: 0px;}
 
+.modal-header {
+    background-color: #f2f2f2; 
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+#register .modal-content,
+#login .modal-content {
+    width: 80%; 
+    text-align:center; 
+    padding:0px;
+    font-size: 17px;
+}
+#register .modal-content{width: 100%;}
+
+.modal-content .modal-footer {
+    text-align: left; 
+    margin-top: 0px; 
+    background-color: #f2f2f2;
+    padding: 3% 10%;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    
+}
+.modal-content .modal-footer p {margin:0px;}
+.modal-content .row {margin-bottom: 4%;}
+
+
+.modal-content .topic,
+.modal-content span,
+.modal-content a {color:#00aaaa;}
+
+
+.modal-body {padding:5% 10%; color:#6E6E6E;}
+.modal-body .col-md-3 {padding:1.5% 0 0 0; font-size: 17px;}
+.modal-body .input-radio {padding:1.5% 15px 0 15px;}
+
+.modal-body .form-inline select {width: 31%;}
+.modal-body .form-inline {text-align: left;}
+.modal-body .col-md-9 span {padding:0 5% 0 2%; color: #6E6E6E}
+.modal-body .checkbox {margin-bottom: 4%;}
+
+.modal-body p {text-align: left;}
+.modal-body button {padding: 2% 5% 2.5% 5%; font-size: 16px;}
+
+.btn-green {background-color: #00aaaa; color:white;}
+
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  text-align: left;
+}
+.rating span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+  color:#BDBDBD;
+}
+.rating span:hover:before,
+.rating span:hover ~ span:before,
+.rating span.active:before {
+   content: "\2605";
+   position: absolute;
+   color:#FACC2E;
+}
+
+
+.nav-pills > li a {background-color: #f2f2f2; color:#585858;}
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, 
+.nav-pills > li.active > a:focus {
+    background-color: #00aaaa; 
+    color:white;
+}
+.nav-pills > li > a {border-bottom-right-radius: 0px; border-bottom-left-radius: 0px;}
+
+
+
 
 /* ---------- home ------------*/
 
@@ -87,7 +187,7 @@ body {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
 .home .header img {width: 13%; float: left;}
 .home .header p {
     float: right; 
-    width: 8%; 
+    /*width: 8%;*/ 
     font-size: 18px; 
     color: white; 
     margin-top:10px;
@@ -108,17 +208,19 @@ body {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
     opacity: 0.7; 
     height: 170px;
 }
+.home .search-box select {width: 40%;}
 
 .search-box .topic {font-size: 30px; text-align: center;}
 
 .search-box button {width: 16%;}
 .search-box select {width: 40%;}
+
 .search-box p {margin:15px 0; font-size: 18px;}
 .search .search-box p {font-size: 16px;}
 .search-box input[type="text"] {
     width: 40%; 
     margin: 0 1%;
-    font-size: 18px;
+    font-size: 16px;
 }
 .search-box input[type="radio"] {margin: 0 1% 0 3%;}
 
@@ -134,6 +236,7 @@ body {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
     border-radius: 50%; 
     border:1px solid #A4A4A4;
     margin-bottom: 10px;
+    outline:none; 
 }
 .home .doctor .choice p {font-size: 16px; color: #6E6E6E;}
 .home .doctor .choice .topic {font-size: 20px; color: #585858;}
@@ -148,16 +251,16 @@ body {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
  
 .home .more-info{
     width: 100%;
-    height: 40%;
+    height: 45%;
     position: relative;
     color:white;
 }
 
-.home .more {width: 42%; position: absolute; left: 28%; text-align: center;}
+.home .more {width: 100%; position: absolute; text-align: center;}
 .home .more-info img {width: 100%; height: 100%; position: absolute;}
 .home .more-info .topic {
     font-size: 25px;
-    margin:6% 0 3% 0;
+    margin:4% 0 1% 0;
 }
 .home .more-info p {font-size: 19px; line-height: 200%;}
 .home .more-info button {
@@ -166,7 +269,7 @@ body {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
     background-color: transparent;
     color: white;
     border:2px solid white;
-    margin: 2.5%;
+    margin: 1%;
 }
 
 
@@ -202,6 +305,7 @@ body {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
     bottom:32%;
     left:43.8%;
 }
+.join .infomation {float: left; width: 50%;}
 
 .join .content {
     background-color: white;
@@ -213,30 +317,44 @@ body {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
 .join .content .col-md-5 {text-align: center;}
 
 .join .partner {text-align: center; font-size: 18px;}
-.join .partner .col-md-4 {padding-left: 0px;}
-.join .partner .col-md-8 {padding-right: 0px;}
-.join .partner .col-md-5,
-.join .partner .col-md-7 {
-    padding: 20px;
+
+
+.join .partner .partner-left,
+.join .partner .partner-right {
+    padding: 0 20px;
     text-align: left;
+    float: left;
 }
+.join .partner .subpartner-left,
+.join .partner .subpartner-right {padding: 0px 10px 0 0;}
+
+.join .partner .subpartner-right {width: 65%; float: right;}
+.join .partner .partner-left {width: 60%}
+.join .partner .subpartner-left {width: 33%; float: left;}
+.join .partner .partner-right {width: 40%}
 
 .join .partner .topic {font-size: 28px; margin-bottom: 0px;}
 .join .partner .row input {height: 38px;}
+.join .partner select {height: 38px;}
 .join .partner input[type="checkbox"] {margin: 5px 10px;}
 .join .partner span {color:#00aaaa;}
 .join .partner button {margin-top: 2%; padding: 10px 15px; font-size: 18px;}
 .join .partner p {margin-top: 20px;}
 .join .row {padding: 0px 4%;}
-.join .partner .col-md-7 .row {padding: 0;}
+.join .partner .partner-left .row {padding: 0;}
+.join .partner .topic .container {padding-top: 0px;}
+
+.join .about img {width:50%;}
 
 
 /* ---------- search page ------------*/
 
+.search {padding: 4%;}
 .search.container {width: 1170px;}
-.search .map {background-color: #F5ECCE; height: 500px;}
+.search .map {border: 1px solid #F5ECCE; padding: 0px;}
+.search .map img {height: 500px;}
 .search .col-md-8 {padding: 0px;}
-.search.container {padding: 0;}
+/*.search.container {padding: 0;}*/
 
 .search .search-box select {width: 35%;}
 .search .search-box input[type="text"] {width: 45%;}
@@ -245,11 +363,12 @@ body {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
     background-color: #fafafa;
     padding:4% 2% 2% 2%;
     border:1px solid #d8d8d8;
+    color:#2E2E2E;
 }
 
 .search .table .image {text-align: center;}
 .search .table .infomation {padding-right: 2%;}
-.search .table .day {background-color: #fafafa;}
+.search .table .day {background-color: #FBF8EF;}
 .search .table img {width: 80%;}
 
 .search .table tr {border:1px solid #d8d8d8; background-color: white;}
@@ -260,6 +379,7 @@ body {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
     font-size: 15px;
     color:#6E6E6E;
 }
+.search .table p a {color:#00aaaa;}
 .search .table button {margin-top:10%;}
 
 
@@ -267,16 +387,25 @@ body {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
 .search .table .topic {color:#00aaaa; text-decoration: underline; font-size: 16px;}
 .search .table .name {color:#00aaaa;}
 
+.search .pagination li.active a{background-color: #00aaaa;}
+
 /* ---------- appoint ------------*/
 
+
 .appoint {padding-top: 4%;}
+.doctor-profile.container,
+.patient.container,
 .appoint.container {width: 1170px;}
 
-.appoint .appointment {width: 64%; float: left; margin-bottom: 5%;}
-.appoint .process {
-    width: 100%;
-    height: 80px;
+.appoint .appointment {
+    width: 64%; 
+    float: left; 
+    margin-bottom: 5%; 
+    /*background-color: #fafafa;*/
+    padding-bottom: 4%;
+    border:2px solid #E6E6E6;
 }
+
 .appoint .appointment .content {
     width: 90%;
     margin:auto;
@@ -284,11 +413,13 @@ body {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
     font-size: 18px;
     color:#585858;
 }
-.appoint .appointment .row {padding: 5%;}
+.appoint .appointment .row {padding: 4% 5%;}
 .appoint .appointment select {width: 25%;}
 .appoint .appointment input[type="radio"] {margin:0 1% 0 1%;}
+.appoint .appointment button {padding: 1% 5%;}
 .appoint .appointment .select {width: 50%; font-size: 16px;}
 
+.appoint .appointment .col-md-12,
 .appoint .appointment .col-md-6 {padding: 0 0 0 5.5%;}
 .appoint .appointment .lastname {padding: 0px;}
 
@@ -298,13 +429,17 @@ body {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
     margin-bottom: 6%;
 }
 .patient .tab-content .topic,
-.appoint .appointment .topic {color:#424242;}
+.appoint .appointment .topic {color:#424242; padding-top: 2%;}
+
+.appoint .process {width: 100%; height: 80px;}
+.appoint .process .row {padding: 4% 0;}
 
 .appoint .login-box {
     width: 100%;
     height: auto;
     border:2px solid #E6E6E6;
     font-size: 16px;
+    margin-top: 5%;
 }
 .appoint .login-box .body {
     text-align: left;
@@ -323,17 +458,20 @@ body {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
     height: 40px;
     background-color: #f2f2f2;
     padding: 1.5% 4%;
+    color: #2E2E2E;
+    font-weight: 500;
 }
 
 .appoint .doctor {
     text-align: left;
     padding: 1%;
-    border:2px solid #E6E6E6;
+    border:1px solid #E6E6E6;
     font-size: 15px;
     width: 34%;
     float: right;
     color: #6E6E6E;
     margin-bottom: 5%;
+    background-color: #fafafa;
 }
 .appoint .doctor .col-md-5 {padding-right: 0px;}
 .appoint .doctor img {width: 100%;}
@@ -357,7 +495,9 @@ body {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
 
 
 /* ---------- patient ------------*/
-.patient {padding: 4% 0;}
+
+.doctor-profile,
+.patient {padding: 4%;}
 .patient .patient-list {
     border:2px solid #E6E6E6;
     height: auto;
@@ -367,72 +507,177 @@ body {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
     padding: 1% 2%;
 }
 
-.patient .nav-pills li {width: 49.9%; font-size: 18px;}
-.patient .col-md-8 {text-align: left;}
-.patient button {width: 100px; margin: 10% 0 0 0;}
+.patient .nav-pills li {width: 49.5%; font-size: 18px;}
+.nav-pills > li + li {margin-left: 1%;}
+.patient .col-md-8 {text-align: left; padding-left: 4%;}
+.patient button {width: 100%; margin: 10% 0 0 0; padding: 8%; font-size: 16px;}
 
 
 .patient .tab-content .head {color:#00aaaa; font-size: 18px;}
-.patient .tab-content .topic {color: #585858; font-weight: 600;}
+.patient .tab-content .topic {color: #585858; font-weight: 600; padding-top: 1%;}
 .patient .tab-content .address {font-style: italic;}
+.patient .tab-content .patient-box.last {border-bottom:0px;}
 .patient .tab-content span {color:#6E6E6E; font-weight: 400;}
 
 .patient .tab-content .patient-box {
     padding: 2% 0;
     border-bottom:2px solid #f2f2f2;
 }
-.patient .tab-content .patient-box.last {border-bottom:0px;}
 
-.nav-pills > li.active > a, .nav-pills > li.active > a:hover, 
-.nav-pills > li.active > a:focus {
-    background-color: #00aaaa; 
-    color:white;
-}
-.nav-pills > li a {background-color: #f2f2f2; color:#585858;}
+
+
 
 
 /* ---------- doctor-profile ------------*/
 
-.doctor-profile .overview {width: 65%; float: left;}
-.doctor-profile .map {width:  35%; float: left;}
+.doctor-profile .profile-overview {margin-bottom: 4%; padding: 3%; background-color: #f2f2f2;}
 
+.doctor-profile .overview {text-align: left; font-size: 17px;}
+.doctor-profile .overview p {color: #00aaaa;}
+.doctor-profile .overview img {border:1px solid #A4A4A4;}
 
-.parallelogram-1 {
-    height: 28px;
-    background-color: #00aaaa;
-    -webkit-transform: skew(40deg); 
-    -moz-transform: skew(40deg); 
-    -o-transform: skew(40deg);
-    transform: skew(40deg);
+.doctor-profile .overview .head {color: #2E2E2E; font-weight: 600; font-size: 19px;}
+.doctor-profile .overview .topic {color:#2E2E2E; font-weight: 600;}
+
+.doctor-profile .content ,
+.doctor-profile .overview {width: 58%; float: left;}
+
+.doctor-profile .overview {width: 64%;}
+.doctor-profile .address {font-size: 15px; color:#6E6E6E; font-style: italic;}
+
+.doctor-profile .booking,
+.doctor-profile .map {width:  40%; float: right;}
+
+.doctor-profile .map {width: 35%;}
+
+.doctor-profile ul {font-size: 18px;}
+
+.doctor-profile .tab-booking,
+.doctor-profile .tab-content {
+    padding: 2%;
+    border:2px solid #E6E6E6;
+    text-align: left;
+    font-size: 16px;
 }
 
-.parallelogram-2 {
-    height: 25px;
-    background-color: #00aaaa;
-    -webkit-transform: skew(320deg); 
-    -moz-transform: skew(320deg); 
-    -o-transform: skew(320deg);
-    transform: skew(320deg);
+
+.doctor-profile .header {
+    position: absolute;
+    top:-20px;
+    width:50%;
+    height: 50px;
 }
-.step {float: left; color:white;}
 
-.step-1, .step-2, .step-3, .step-4 {position: relative; margin:0 1%;}
+.doctor-profile .booking .header {
+    color:white;
+    position: relative;
+    top:0px;
+    width:100%;
+    height: 46px;
+    padding-top: 10px;
+    text-align: left;
+    font-size: 18px;
+    background-color: #00aaaa;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
 
-.step-1 p, .step-2 p, .step-3 p,
-.step-4 p {position: absolute; top:25%; left:20%; font-size: 16px;}
-.step-3 p {left:28%;}
+.doctor-profile .booking .meeting {
+    width: 100%; 
+    border:2px solid #E6E6E6;
+}
+.doctor-profile .booking .meeting .head {
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 2%;
+}
+.doctor-profile .booking .meeting .body {height: 100px; padding: 5%;}
+.doctor-profile .booking .row { margin: 5% 0;}
+.doctor-profile .booking .topic {font-size: 17px;}
 
-.step-1 {width: 30%;}
-.step-2 {width: 22%;}
-.step-3 {width: 15%;}
-.step-4 {width: 20%;}
-
-.step-3 .parallelogram-2, .step-3 .parallelogram-1,
-.step-4 .parallelogram-2, .step-4 .parallelogram-1 {background-color: #f2f2f2;}
-
-.step-3 p, .step-3 p,
-.step-4 p, .step-4 p {color: #585858;}
+.doctor-profile .tab-content p {color:#6E6E6E; font-size: 16px;}
+.doctor-profile .tab-content .topic {
+    color:#2E2E2E; 
+    font-size: 18px; 
+    margin-top: 3%;
+    font-weight: 500;
+}
 
 
+/* ---------- setting  ------------*/
+
+.setting {padding: 4% 0; font-size: 17px;}
+.setting .body-setting {border:2px solid #E6E6E6;}
+.setting .body-setting .content {
+    width: 70%;
+    margin: auto; 
+    padding: 2%; 
+    text-align: left;
+}
+.setting .body-setting .row .password {width: 60%;}
+.setting .body-setting .row .center {text-align: center;}
+.setting .body-setting .row p {margin-top: 5%;}
+.setting .body-setting .row select {width: 30%;}
+.setting .body-setting .row button {margin: 5%; padding: 1.5% 4%; font-size: 16px;}
+
+.setting .topic {
+    font-size: 20px; 
+    color:#00aaaa; 
+    text-align: center;
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 1%;
+}
+
+
+.breadcrumbs-alt {
+    list-style-type:none;
+    margin:0px 0 20px;
+    overflow:hidden;
+    padding:0;
+    width:100%;
+}
+
+.breadcrumbs-alt li.current,
+.breadcrumbs-alt li {
+    background:#E0E1E7;
+    color:#444444;
+    float:left;
+    font-size:16px;
+    padding:2% 5.8%;
+    position:relative;
+    text-decoration:none;
+    float:left;
+    margin:0 5% 0 0;
+}
+.breadcrumbs-alt li.current {background:#1FB5AD; color:#fff;}
+
+.breadcrumbs-alt li.current:before,
+.breadcrumbs-alt li.last:before,
+.breadcrumbs-alt li.next:before {
+    border-color:#E0E1E7 #E0E1E7 #E0E1E7 rgba(0,0,0,0);
+    border-style:solid;
+    border-width:1.5em 0 1.7em 1em;
+    content:"";
+    left:-1em;
+    margin-top:-1.6em;
+    position:absolute;
+    top:50%;
+}
+.breadcrumbs-alt li.current:after,
+.breadcrumbs-alt li.next:after {
+    border-bottom:1.5em solid rgba(0,0,0,0);
+    border-left:1em solid #E0E1E7;
+    border-top:1.5em solid rgba(0,0,0,0);
+    content:"";
+    margin-top:-1.5em;
+    position:absolute;
+    right:-1em;
+    top:50%;
+}
+.breadcrumbs-alt li.current.last:after {border:0px;}
+
+.breadcrumbs-alt li.current:before {border-color:#1FB5AD #1FB5AD #1FB5AD rgba(0,0,0,0);}
+.breadcrumbs-alt li.current:after {border-left:1em solid #1FB5AD;}
 
 

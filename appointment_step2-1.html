@@ -11,38 +11,52 @@
     <div class="header">
       <img src="static/image/logo.png">
       <div class="login">
-        <p>เข้าสู่ระบบ </p>
-        <p>สมัครใช้งาน </p>
+        <li class="dropdown">
+          <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+              <span class="username">สมชาย</span>
+          </a>
+          <ul class="dropdown-menu extended logout">
+              <li><a href="patient_page.html">My Appointment</a></li>
+              <li><a href="setting.html">Setting</a></li>
+              <li><a href="home.html">Logout</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+              <span class="username">Browse ^</span>
+          </a>
+          <ul class="dropdown-menu extended logout">
+              <li role="presentation"><a href="home.html" >หน้าแรก</a></li>
+              <li><a href="why_join.html">เข้าร่วม Doctar</a></li>
+              <li><a href="search_page.html">ค้นหาและนัดพบหมอ</a></li>
+          </ul>
+        </li>
+      </div>
+    </div>
+    <div class="sub-header">
+      <div class="sub container ">
+        <p> <a href="doctor_profile.html">นพ. เฉลิม อยู่บำรุง</a><span> > </span>  จองคิวเข้ารับการรักษา </p>
       </div>
     </div>
 
     <div class="body appoint container">
       <div class="appointment">
         <div class="process">   
-          <div class="step step-1">
-            <div class="parallelogram-1"></div>
-            <div class="parallelogram-2"></div>
-            <p> Appointment Info</p>
-          </div>
-          <div class="step step-2">
-            <div class="parallelogram-1"></div>
-            <div class="parallelogram-2"></div>
-            <p> Patient Info</p>
-          </div>
-          <div class="step step-3">
-            <div class="parallelogram-1"></div>
-            <div class="parallelogram-2"></div>
-            <p> Detail</p>
-          </div>
-          <div class="step step-4">
-            <div class="parallelogram-1"></div>
-            <div class="parallelogram-2"></div>
-            <p> Completed</p>
+          <div class="row">
+            <div class="col-md-12">
+              <ul class="breadcrumbs-alt">
+                <li class="current">Home</li>
+                <li class="current">Pages</li>
+                <li class="next">Elements</li>    
+                <li class="last">Home</li>
+              </ul>
+            </div>
           </div>
         </div>
-        
+                
         <div class="content">
           <div class="row">
+          <form action="appointment_step3-1.html">
             <p class="topic"> โปรดเลือกผู้เข้าพบแพทย์ </p>
             <p> <input type="radio" name="name"> เดวิด  เบ็คแฮม </p>
             <p> <input type="radio" name="name"> ผู้ป่วยท่านอื่น </p>
@@ -56,7 +70,7 @@
               <input type="text">
             </div>
 
-            <div class="row">
+            <div class="col-md-12">
               <p class="topic"> วัน เดือน ปี เกิด </p>
               <div class="form-inline" action="search_page.html">
                 <select class="form-control"><option>วัน</option></select>
@@ -70,6 +84,7 @@
           </div>
         </div>
         <button class="btn btn-default">Next</button>
+        </form>
       </div>
 
       <div class="doctor">    
@@ -79,7 +94,11 @@
         </div>
         <div class="col-md-7">
           <p class="head"> นพ. เฉลิม   อยู่บำรุง</p>
-          <p> รีวิว </p>
+          <p>
+            <div class="rating">
+              <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span class="active">☆</span>
+            </div>
+          </p>
           <p class="topic"> ความเชี่ยวชาญ </p>
           <p class="type"> แพทย์เวชศาสตร์ความงาม แพทย์โรคผิวหนัง</p>
           

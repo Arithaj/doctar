@@ -1,0 +1,75 @@
+@media (max-width: 1200px) {
+    .join .about img {width:60%;}
+    .home .video .bg-search, 
+    .home .video .search-box {width: 60%; left:20%;}
+    /*.home .more-info {height: 50%;}*/
+    .home .more-info .topic {font-size: 25px;}
+
+    .container,
+    .doctor-profile.container,
+    .patient.container,
+    .search.container,
+    .setting.container,
+    .home.container,
+    .join.container,
+    .appoint.container {width: 100%; padding: 4% 2%;}
+
+    
+}
+
+@media (max-width: 1015px) {
+    .join .about img {width:65%;}
+    .search-box .topic {font-size: 28px;}
+
+    .breadcrumbs-alt li.current, .breadcrumbs-alt li {padding: 2% 5.5%;}
+}
+
+@media (max-width: 992px) {
+    .patient .col-md-2 {width: 20%; float: left;}
+    .patient .col-md-8 {width: 60%; float: left;}
+
+    .doctor-profile .col-md-4 {width: 30%; float: left;}
+    .doctor-profile .col-md-8 {width: 70%; float: left;}
+    .doctor-profile .col-md-8 p {font-size: 16px;}
+
+    .doctor-profile .overview {width: 69%;}
+    .doctor-profile .map {width: 30%;}
+
+    .search .map {display: none;}
+
+    .join .intro .col-md-6 {width: 30%; float: left;}
+    .join .about img {width:70%;}
+    .join .intro h1 {font-size: 30px;}
+    .join .intro p {font-size: 20px;}
+    .join .partner .topic {font-size: 24px;}
+
+    .join .infomation .topic {font-size: 20px;}
+    .join .infomation p {font-size: 18px;}
+    .breadcrumbs-alt li.current, .breadcrumbs-alt li {padding: 2% 5%;}
+}
+
+
+@media (max-width: 900px) {
+    .home .video .bg-search, .home .video .search-box {width: 65%; left:18%;}
+    .home .search-box .topic {font-size: 26px; }
+    .home .more-info .topic {
+        font-size: 24px;
+        margin:2% 0 1% 0;
+    }
+}
+
+@media (max-width: 850px) {
+    .appoint .appointment,
+    .appoint .doctor {float: none; width: 100%;}
+    .breadcrumbs-alt li.current, .breadcrumbs-alt li {padding: 2% 6.5%;}
+    .join .intro button {font-size: 18px; left:41%;}
+}
+
+
+
+
+
+
+
+
+

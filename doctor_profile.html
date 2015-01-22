@@ -3,6 +3,7 @@
   <meta charset="utf-8"> 
   <link rel="stylesheet" href="static/css/bootstrap.css">
   <link rel="stylesheet" href="static/css/style.css">
+  <link rel="stylesheet" href="static/css/responsive.css">
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script type="text/javascript" src="static/js/bootstrap.js"></script>
   </head>
@@ -11,8 +12,24 @@
     <div class="header">
       <img src="static/image/logo.png">
       <div class="login">
-        <p>เข้าสู่ระบบ </p>
-        <p>สมัครใช้งาน </p>
+        <p><a href="#" data-toggle="modal" data-target="#register">สมัครสมาชิก </a></p>
+        <p><a href="#" data-toggle="modal" data-target="#login">เข้าสู่ระบบ </a></p>
+     
+        <li class="dropdown">
+          <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+              <span class="username">Browse ^</span>
+          </a>
+          <ul class="dropdown-menu extended logout">
+              <li><a href="home.html">หน้าแรก</a></li>
+              <li><a href="why_join.html">เข้าร่วม Doctar</a></li>
+              <li><a href="search_page.html">ค้นหาและนัดพบหมอ</a></li>
+          </ul>
+        </li>
+      </div>
+    </div>
+    <div class="sub-header">
+      <div class="sub container ">
+        <p> <a href="search_page.html">ค้นหาหมอ</a><span> > </span> นพ. เฉลิม อยู่บำรุง </p>
       </div>
     </div>
 
@@ -24,12 +41,16 @@
           </div>
           <div class="col-md-8">
             <p class="head"> นพ. เฉลิม   อยู่บำรุง</p>
-            <p> รีวิว </p>
+            <p>
+              <div class="rating">
+                <span>☆</span><span>☆</span><span class="active">☆</span><span class="active">☆</span><span class="active">☆</span>
+              </div>
+            </p>
             <p class="topic"> ความเชี่ยวชาญ </p>
             <p> แพทย์เวชศาสตร์ความงาม แพทย์โรคผิวหนัง</p>
             <p class="topic"> ชื่อคลินิค / สถานที่ประกอบการ </p>
             <p> วีอาร์โคเรีย เอสเทสิค คลีนิค (สาขาเมืองเอก รังสิต) </p>
-            <p> วีอาร์ อินเตอร์เนชั่นเเนล เมคโอเว่อร์ คลินิค (สาขา สุขุมวิท)</p>
+            <p> วีอาร์ อินเตอร์เนชั่นเเนล เมคโอเว่อร์คลินิค (สาขา สุขุมวิท)</p>
           </div>
         </div>
         <div class="map">
@@ -40,31 +61,31 @@
       <div class="profile-content row">
         <div class="content">
           <ul class="nav nav-pills" role="tablist">
-            <li role="presentation" class="active"><a href="#comming" role="tab" data-toggle="tab">Upcomming Appointment</a></li>
-            <li role="presentation"><a href="#past" role="tab" data-toggle="tab">Past Appointment</a></li>
+            <li role="presentation" class="active"><a href="#profile" role="tab" data-toggle="tab">Profile</a></li>
+            <li role="presentation"><a href="#review" role="tab" data-toggle="tab">Review</a></li>
           </ul>
 
           <div class="tab-content">
-            <div role="tabpanel" class="tab-pane active" id="comming">
+            <div role="tabpanel" class="tab-pane active" id="profile">
               <div class="row">
                 <p class="topic"> About </p>
                 <p> เป็นผู้พัฒนาเทคโนโลยีของเลเซอร์และเครื่องให้กำเนิดแสงความเข้มสูง (Intense Pulsed Light 
-หรือ IPL) เป็นการรักษาที่ได้รับความสนใจอย่างมากในปัจจุบัน ถึงแม้เลเซอร์และ IPL จะมี
-คุณสมบัติทางเทคนิคที่แตกต่างกัน แต่กลไกในการทำงานใช้หลักการเดียวกัน กล่าวคือเครื่องมือ
-ทั้งสองชนิดให้กำเนิดพลังงานแสงไปยังบริเวณผิวหนังที่มีรอยคล้ำจากกระหรือฝ้า ผิวหนังในส่วน
-ที่มีเม็ดสีเมลานินปริมาณมากกว่าปกติจะดูดซับพลังงานแสงแล้วเปลี่ยนเป็นพลังงานความร้อน มีผลทำให้เม็ดสีเมลานินในบริเวณนั้นถูกทำลายและมีจำนวนลดลง มีผลทำให้กระหรือฝ้านั้นจางลง
-หรือหายไป เห็นผลการรักษาได้ค่อนข้างรวดเร็ว อย่างไรก็ตามการรักษาด้วยวิธีนี้ยังมีค่าใช้จ่าย
-ค่อนข้างสูง และเสี่ยงต่อการเกิดผลข้างเคียง โดยเฉพาะอย่างยิ่งถ้าทำการรักษาโดยผู้ที่ขาดความรู้
-ความชำนาญ และที่สำคัญกระและฝ้ายังจะกลับมาเป็นใหม่ได้อีกเมื่อหยุดการรักษา ทั้งนี้เพราะ
-เลเซอร์และ IPL สามารถกำจัดเม็ดสีส่วนเกินในผิวหนังได้แต่ไม่สามารถป้องกันการเกิดเม็ดสีที่
-สะสมขึ้นมาใหม่ ดังนั้นภายหลังการรักษาด้วยเลเซอร์หรือ IPL ยังคงต้องทายาเพื่อลดจำนวน
-เม็ดสีร่วมกับการใช้ครีมกันแดดเป็นประจำ</p>
+                หรือ IPL) เป็นการรักษาที่ได้รับความสนใจอย่างมากในปัจจุบัน ถึงแม้เลเซอร์และ IPL จะมี
+                คุณสมบัติทางเทคนิคที่แตกต่างกัน แต่กลไกในการทำงานใช้หลักการเดียวกัน กล่าวคือเครื่องมือ
+                ทั้งสองชนิดให้กำเนิดพลังงานแสงไปยังบริเวณผิวหนังที่มีรอยคล้ำจากกระหรือฝ้า ผิวหนังในส่วน
+                ที่มีเม็ดสีเมลานินปริมาณมากกว่าปกติจะดูดซับพลังงานแสงแล้วเปลี่ยนเป็นพลังงานความร้อน มีผลทำให้เม็ดสีเมลานินในบริเวณนั้นถูกทำลายและมีจำนวนลดลง มีผลทำให้กระหรือฝ้านั้นจางลง
+                หรือหายไป เห็นผลการรักษาได้ค่อนข้างรวดเร็ว อย่างไรก็ตามการรักษาด้วยวิธีนี้ยังมีค่าใช้จ่าย
+                ค่อนข้างสูง และเสี่ยงต่อการเกิดผลข้างเคียง โดยเฉพาะอย่างยิ่งถ้าทำการรักษาโดยผู้ที่ขาดความรู้
+                ความชำนาญ และที่สำคัญกระและฝ้ายังจะกลับมาเป็นใหม่ได้อีกเมื่อหยุดการรักษา ทั้งนี้เพราะ
+                เลเซอร์และ IPL สามารถกำจัดเม็ดสีส่วนเกินในผิวหนังได้แต่ไม่สามารถป้องกันการเกิดเม็ดสีที่
+                สะสมขึ้นมาใหม่ ดังนั้นภายหลังการรักษาด้วยเลเซอร์หรือ IPL ยังคงต้องทายาเพื่อลดจำนวน
+                เม็ดสีร่วมกับการใช้ครีมกันแดดเป็นประจำ</p>
               </div>
 
               <div class="row">
                 <p class="topic"> Education </p>
                 <p> - แพทยศาสตร์บัณฑิต จุฬาลงกรณ์มหาวิทยาลัย, 2524</p>
-                <p> - Skin laser surgery, Harvard Medical School, Boston, Massachusetts</p>
+                <p> - Skin laser surgery, Harvard Medical School, Boston, Massachusetts สหรัฐอเมริกา, 2537-2538</p>
               </div>
 
               <div class="row">
@@ -78,12 +99,61 @@
                 <p> - โรงพยาบาลบำรุงราษฏร์</p>
                 <p> - โรงพยาบาลวิชัยยุทธ</p> 
               </div>
+
+              <div class="row">
+                <p class="topic"> Professional Membership</p>
+                <p> - สมาคมแพทย์ผิวหนังแห่งประเทศไทย</p>
+                <p> - สมาคมแพทย์เวชศาสตร์ความงามแห่งประเทศไทย</p> 
+              </div>
+
+              <div class="row">
+                <p class="topic"> Awaards and Publications</p>
+                <p> - เกียรตินิยม เหรียญทอง สาขา ตจวิทยา</p>
+                <p> - แพทย์รับเชิญรายการ "รู้ทัน รักษาโรค"</p> 
+              </div>
+
+              <div class="row">
+                <p class="topic"> Language</p>
+                <p> - Thai, English, Chinese</p> 
+              </div>
+
+            </div>
+
+            <div role="tabpanel" class="tab-pane active" id="review">
+
             </div>
           </div>
         </div>
 
         <div class="booking">
-          
+          <div class="header"> Book an Appointment</div>
+
+          <div class="tab-booking">
+            <div class="row">
+              <p class="topic"> 1. เลือกเหตุผลการเข้ารับบริการ</p>
+              <p> 
+              <select class="form-control">
+                <option value="">เหตุผลการเข้ารับบริการ</option>
+              </select> 
+              </p> 
+            </div>
+            <div class="row">
+              <p class="topic"> 2. คลิกเวลานัดพบกับ นพ. เฉลิม  อยู่บำรุง</p>
+              <div class="meeting">
+                <div class="head">
+                  วิอาร์โคเรีย เอสเทติค คลินิค (สาขาเมืองเอก รังสิต)
+                </div>
+                <div class="body">
+                  <p class="address"> 300/158-9 หมู่ที่ 13 ซ.พหลโยธิน 87 ถ.พหลโยธิน ต.คูคต อ.ลำลูกกา จ.ปทุมธานี 12130 </p>
+
+                  <p> <a href="appointment_step1.html"> 13:00 </a> </p>
+                </div>
+                <div class="head">
+                  วิอาร์ อินเตอร์เนชั่นแนล โอเว่อร์คลินิค (สาขา สุขุมวิท)
+                </div>
+              </div> 
+            </div>
+          </div>
         </div>
        
       </div>

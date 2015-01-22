@@ -3,7 +3,7 @@
   <meta charset="utf-8"> 
   <link rel="stylesheet" href="static/css/bootstrap.css">
   <link rel="stylesheet" href="static/css/style.css">
-  
+  <link rel="stylesheet" href="static/css/responsive.css">
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script type="text/javascript" src="static/js/bootstrap.js"></script>
   </head>
@@ -12,8 +12,31 @@
     <div class="header">
       <img src="static/image/logo.png">
       <div class="login">
-        <p>เข้าสู่ระบบ </p>
-        <p>สมัครใช้งาน </p>
+        <li class="dropdown">
+          <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+              <span class="username">สมชาย</span>
+          </a>
+          <ul class="dropdown-menu extended logout">
+              <li><a href="patient_page.html">My Appointment</a></li>
+              <li><a href="setting.html">Setting</a></li>
+              <li><a href="home.html">Logout</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+              <span class="username">Browse ^</span>
+          </a>
+          <ul class="dropdown-menu extended logout">
+              <li role="presentation"><a href="home.html" >หน้าแรก</a></li>
+              <li><a href="why_join.html">เข้าร่วม Doctar</a></li>
+              <li><a href="search_page.html">ค้นหาและนัดพบหมอ</a></li>
+          </ul>
+        </li>
+      </div>
+    </div>
+    <div class="sub-header">
+      <div class="sub container ">
+        <p> ประวัติการเข้ารักษา </p>
       </div>
     </div>
 
